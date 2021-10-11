@@ -1,26 +1,32 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Courier New', Courier, monospace;
 }
+
+p, h1 {
+  padding: 10px 0px;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+}
+
 
 body {
   background-color: #222222;
   color: white;
   text-align: center;
+  padding: 0px 20px;
 }
 
 header {
-  width: 100vw;
-  height: 20%;
   padding: 1% 0%;
   color: white;
   text-align: center;
 }
 
 #topNav {
-  width: 100vw;
-  height: 10%;
   background-color: #333333;
 }
 
@@ -40,8 +46,75 @@ header {
   text-decoration: none;
   text-align: center;;
   color: white;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  font-family: Helvetica, sans-serif;
 }
 
 #topNavList li a:hover {
+  background-color: #555555;
+}
+
+.topNavActive {
   background-color: #444444;
+}
+
+#main {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.horizontal {
+  float: left;
+}
+
+#sideNavContainer {
+  width: 15%;
+  position: sticky;
+}
+
+#pageContentContainer {
+  width: 85%;
+}
+
+#sideNav {
+  height: 80vh;
+  background-color: #444;
+  color: white;
+  text-align: center;
+}
+
+#sideNav h1 {
+  font-size: 20px;
+}
+
+#sideNav li {
+  list-style-type: none;
+}
+
+#sideNav li a {
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+#pageContent {
+  padding: 0px 20px;
+}
+
+#pageContent h1 {
+  font-size: 32px;
+}
+
+#pageContent p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#pageContent ul, ol {
+  margin-left: 30px;
+}
+
+#pageContent li {
+  list-style-position: inside;
 }
