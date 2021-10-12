@@ -4,14 +4,13 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-p, h1 {
+p, h1, h2, h3, h4, h5, h6 {
   padding: 10px 0px;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, sans-serif;
 }
-
 
 body {
   background-color: #222222;
@@ -70,7 +69,6 @@ header {
 
 #sideNavContainer {
   width: 15%;
-  position: sticky;
 }
 
 #pageContentContainer {
@@ -78,7 +76,6 @@ header {
 }
 
 #sideNav {
-  height: 80vh;
   background-color: #444;
   color: white;
   text-align: center;
@@ -90,6 +87,7 @@ header {
 
 #sideNav li {
   list-style-type: none;
+  padding: 10px 0px;
 }
 
 #sideNav li a {
@@ -102,8 +100,8 @@ header {
   padding: 0px 20px;
 }
 
-#pageContent h1 {
-  font-size: 32px;
+#pageContent h2 {
+  font-size: 28px;
 }
 
 #pageContent p {
