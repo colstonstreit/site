@@ -96,6 +96,10 @@ header {
   color: white;
 }
 
+#sideNav li a:hover {
+  color: #bbb;
+}
+
 #pageContent {
   padding: 0px 20px;
 }
