@@ -116,3 +116,11 @@ header {
 #pageContent li {
   list-style-position: inside;
 }
+
+#pageContent section section {
+  margin-left: 20px;
+}
+
+hr {
+  margin: 20px 0px;
+}
