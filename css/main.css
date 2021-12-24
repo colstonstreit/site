@@ -145,3 +145,34 @@ footer a:hover {
 hr {
   margin: 20px 0px;
 }
+
+input[type=text] {
+  font: bold 18px Helvetica;
+  padding: 2px;
+  background-color: #444444;
+  color: white;
+  text-align: center;
+}
+
+span {
+  padding-right: 20px;
+}
+
+div.indent {
+  padding-left: 2%;
+}
+
+p.hideable:hover {
+  color: #777777;
+}
+
+button {
+  margin-left: 1%;
+  font: 16px Helvetica;
+  padding: 0px 10px;
+  color: black;
+}
+
+select {
+  font: 16px Helvetica;
+}
