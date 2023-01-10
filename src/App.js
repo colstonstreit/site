@@ -1,32 +1,24 @@
-import './App.css';
+import './main.css';
 import React from 'react';
-import { Route, Routes, Link } from "react-router-dom";
-import About from './About';
+import { Route, Routes } from "react-router-dom";
 import Home from './Home';
+import TopNav from './TopNav';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <div>
-          {/* <nav>
-            <ul id="navigation">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-          </nav> */}
-        </div>
-        <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />"
-        </Routes>
-      </div>
-    );
-  }
+export function Footer() {
+
 }
 
-export default App;
+export default function App() {
+  return (
+    <>
+      {/* <TopNav/> */}
+      <main>
+        <div className="content">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </main>
+    </>
+  );
+}

@@ -1,0 +1,84 @@
+*, *:before, *:after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+section:first-of-type {
+  padding-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.relevantExperience ul {
+  list-style-position: outside;
+  padding-left: 1em;
+}
+
+.relevantExperience .experience:not(:last-of-type) {
+  padding-bottom: 1rem;
+}
+
+.relevantExperience .experience:last-of-type {
+  padding-bottom: 0;
+}
+
+ul.projectTools {
+  margin-top: 0.5rem;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul.projectTools li {
+  border: 1px solid black;
+  padding: 1px 2px;
+  border-radius: 5px;
+  background-color:lightgray;
+}
+
+ul.projectTools li:not(:last-of-type) {
+  margin-right: 0.5rem;
+}
+
+.projectTitleAndLinks {
+  display: flex;
+}
+
+.projectLinks {
+  margin: 0 0 0 auto;
+}
+
+.projectLinks a {
+  display: inline-block;
+  padding-inline: 0.25em;
+  height: 100%;
+}
+
+.github-icon, .linkedIn-icon {
+  display: inline-block;
+  height: 1.5em;
+}
+
