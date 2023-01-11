@@ -77,7 +77,7 @@ function FeaturedProjects() {
     <FeaturedProject
       title="Scholasticate"
       tools={["Javascript", "HTML/CSS", "SQLite", "Flask", "Mapbox API"]}
-      githubLink={"https://github.com/colstonstreit/CS-30700-Project-Scholasticate"}
+      githubLink={"https://github.com/colstonstreit/CS-30700-Scholasticate"}
       liveLink={""}>
       This was a group project for my Intro to Software Engineering course. As part of a team of six students, we created a social media site where students can easily find people who are in the same classes. Users can message each other, form study groups, and even see real-time location info using the Mapbox API for friend and study group locations.
     </FeaturedProject>
