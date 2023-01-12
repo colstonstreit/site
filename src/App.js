@@ -14,7 +14,7 @@ export default function App() {
       {/* <TopNav/> */}
       <main>
         <div className="content">
-          <p style={{'text-align': 'center' }}>
+          <p style={{'text-align': 'center', 'margin': 0, 'padding-top': 50 }}>
             Please note that this is only a skeleton site - I intend to flesh it out soon. Thank you for your patience!
           </p>
           <Routes>

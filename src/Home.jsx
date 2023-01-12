@@ -9,7 +9,7 @@ function About() {
   return <>
     <section className='about'>
       <h2>About Me</h2>
-      <p>Hi. My name is Colston Streit, and I am a software engineer.</p>
+      <p>Hi! My name is Colston Streit, and I am a software engineer.</p>
       <p>
         I am currently a senior at Purdue University, where I am majoring in Computer Science and Mathematics, with concentrations in Software Engineering, Systems Software, Security, Algorithmic Foundations, and Computational Science and Engineering. I am also minoring in Statistics, Biological Sciences, and Psychology.
       </p>
@@ -49,7 +49,7 @@ function RelevantExperience() {
         <li>Ensured student employees across campus were adequately monitoring campus technology</li>
       </ul>
     </Experience>
-    <Experience title="Computer Architecture Teaching Assistant" company="Purdue University CS" companyLink="https://www.cs.purdue.edu/index.html" time="August - December 2021">
+    <Experience title="Computer Architecture TA" company="Purdue CS" companyLink="https://www.cs.purdue.edu/index.html" time="August - December 2021">
       <ul>
         <li>Assisted students with circuit building and low-level C / ARM Assembly coding assignments</li>
         <li>Coordinated with the professor and other TAs to ensure a positive environment for student</li>
