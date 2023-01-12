@@ -1,7 +1,7 @@
 import React from 'react';
 
 export function GitHubIcon({dest}) {
-  return <a className="github-link" href={dest}>
+  return <a className="github-link" href={dest} target="_blank">
     <svg className="github-icon" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
       <title>GitHub Project</title>
       <path
@@ -14,7 +14,7 @@ export function GitHubIcon({dest}) {
 }
 
 export function LinkedInIcon() {
-  return <a className="linkedIn-link" href="https://www.linkedin.com/in/colston-streit/">
+  return <a className="linkedIn-link" href="https://www.linkedin.com/in/colston-streit/" target="_blank">
     <svg className="linkedIn-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  >
       <title>LinkedIn</title>
       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
