@@ -14,7 +14,9 @@ export default function App() {
       {/* <TopNav/> */}
       <main>
         <div className="content">
-          <p style={{'text-align': 'center' }}>Please note that this is only a skeleton site - I intend to flesh it out soon. Thank you for your patience!</p>
+          <p style={{'text-align': 'center' }}>
+            Please note that this is only a skeleton site - I intend to flesh it out soon. Thank you for your patience!
+          </p>
           <Routes>
             <Route exact path="/" element={<Home />} />
           </Routes>

@@ -1,6 +1,10 @@
 import React from 'react';
 import { GitHubIcon } from './Icons';
 
+function LinkButton({text, link}) {
+  return <button onClick={() => { window.open(link, '_blank'); return false; }}>{text}</button>
+}
+
 function About() {
   return <>
     <section className='about'>
@@ -12,16 +16,18 @@ function About() {
       <p>
         I have specialized in backend work in both my work experiences and school projects, but I am actively working on improving my frontend skills. I am currently looking for a position for after I graduate in May 2023.
       </p>
-      {/* <button>See My Resume</button>
-      <button>See My Transcript</button> */}
+      <div className='linkButtons'>
+        <LinkButton text="See My Resume" link="https://drive.google.com/file/d/1L7RFFOuvD2Uw1KL0K6oA8j5kxQZol2tn/view?usp=share_link"/>
+        <LinkButton text="See My Transcript" link="https://drive.google.com/file/d/1f7s7ZzVjoKKtCFHsQIxFUprbOt3pinDP/view?usp=share_link" />
+      </div>
     </section>
   </>
 }
 
-function Experience({children, title, company, start, end, location}) {
+function Experience({children, title, company, companyLink, time}) {
   return <div className='experience'>
-    <h3>{title} - {company}</h3>
-    <span className='experienceLocation'>{location}</span>, <span className='experienceTime'>{start} - {end}</span>
+    <h3>{title} - <a href={companyLink} target="_blank">{company}</a></h3>
+    <span className='experienceTime'>{time}</span>
     {children}
   </div>
 }
@@ -29,7 +35,7 @@ function Experience({children, title, company, start, end, location}) {
 function RelevantExperience() {
   return <section className="relevantExperience">
     <h2>Relevant Work Experience</h2>
-    <Experience title="Software Development Engineering Intern" company="iA" start="May 2022" end="November 2022" location="Indianapolis, IN / Remote">
+    <Experience title="Software Engineering Intern" company="iA" companyLink="https://iarx.com/" time="May - November 2022">
       <ul>
         <li>Worked with another intern to create a simulator using C#/.NET and WinForms that interacted with a Microsoft SQL Server database to help QA more easily test one of iA’s new products</li>
         <li>Designed and implemented a GUI with C#/.NET and WPF for an existing console application</li>
@@ -37,13 +43,13 @@ function RelevantExperience() {
         <li>Developed and presented strategies to improve employee satisfaction to iA’s executive team</li>
       </ul>
     </Experience>
-    <Experience title="Technology Coordinator / Supervisor" company="Information Technology at Purdue (ITaP)" start="August 2021" end="May 2022" location="West Lafayette, Indiana">
+    <Experience title="Technology Supervisor" company="ITaP" companyLink="https://www.itap.purdue.edu/about/index.html" time="August 2021 - May 2022, January 2023 - Present">
       <ul>
         <li>Assisted customers with various technological issues</li>
         <li>Ensured student employees across campus were adequately monitoring campus technology</li>
       </ul>
     </Experience>
-    <Experience title="Computer Architecture Teaching Assistant" company="Purdue University" start="August 2021" end="December 2021" location="West Lafayette, Indiana">
+    <Experience title="Computer Architecture Teaching Assistant" company="Purdue University CS" companyLink="https://www.cs.purdue.edu/index.html" time="August - December 2021">
       <ul>
         <li>Assisted students with circuit building and low-level C / ARM Assembly coding assignments</li>
         <li>Coordinated with the professor and other TAs to ensure a positive environment for student</li>

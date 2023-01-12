@@ -7,7 +7,8 @@
 
 main {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 1000px;
+  padding: 0 5%;
 }
 
 section {
@@ -20,6 +21,7 @@ section:first-of-type {
 
 a {
   text-decoration: none;
+  color: rgb(93, 0, 255);
 }
 
 p {
@@ -31,9 +33,17 @@ p:last-child {
   margin-bottom: 0;
 }
 
+h2 {
+  margin-bottom: 0.5em;
+}
+
 .relevantExperience ul {
   list-style-position: outside;
-  padding-left: 1em;
+  padding-left: 1.5rem;
+}
+
+.relevantExperience ul li {
+  margin-top: 0.5rem;
 }
 
 .relevantExperience .experience:not(:last-of-type) {
@@ -44,23 +54,24 @@ p:last-child {
   padding-bottom: 0;
 }
 
+.experienceTime {
+  font-style: italic;
+}
+
 ul.projectTools {
   margin-top: 0.5rem;
   list-style-type: none;
   display: flex;
+  gap: 0.5em;
   align-items: center;
   flex-wrap: wrap;
 }
 
 ul.projectTools li {
   border: 1px solid black;
-  padding: 1px 2px;
+  padding: 0 0.5em;
   border-radius: 5px;
   background-color:lightgray;
-}
-
-ul.projectTools li:not(:last-of-type) {
-  margin-right: 0.5rem;
 }
 
 .projectTitleAndLinks {
@@ -82,3 +93,28 @@ ul.projectTools li:not(:last-of-type) {
   height: 1.5em;
 }
 
+.linkButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  justify-content: center;
+}
+
+.linkButtons button {
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #DDD;
+  transition: background-color 0.25s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.linkButtons button:hover {
+  background-color: #EEE;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
