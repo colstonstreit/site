@@ -118,6 +118,7 @@ ul.projectTools li {
   background-color: #DDD;
   transition: background-color 0.25s ease-in-out;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .linkButtons button:hover {
