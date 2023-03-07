@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -82,7 +84,7 @@ ul.projectTools li {
   border: 1px solid black;
   padding: 0 0.5em;
   border-radius: 5px;
-  background-color:#DDD;
+  background-color: #ddd;
 }
 
 .projectTitleAndLinks {
@@ -99,7 +101,13 @@ ul.projectTools li {
   height: 100%;
 }
 
-.github-icon, .linkedIn-icon {
+.featuredProject {
+  margin-bottom: 1rem;
+}
+
+.github-icon,
+.linkedIn-icon,
+.see-live-icon {
   display: inline-block;
   height: 1.5em;
 }
@@ -115,14 +123,14 @@ ul.projectTools li {
 .linkButtons button {
   border-radius: 5px;
   padding: 0.5rem;
-  background-color: #DDD;
+  background-color: #ddd;
   transition: background-color 0.25s ease-in-out;
   font-size: 0.9rem;
   cursor: pointer;
 }
 
 .linkButtons button:hover {
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 @media (max-width: 500px) {
