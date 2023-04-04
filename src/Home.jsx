@@ -80,14 +80,15 @@ function RelevantExperience() {
         </ul>
       </Experience>
       <Experience
-        title="Technology Supervisor"
-        company="ITaP"
+        title="Technology Supervisor / Analyst"
+        company="Purdue IT"
         companyLink="https://www.itap.purdue.edu/about/index.html"
         time="August 2021 - May 2022, January 2023 - Present"
       >
         <ul>
-          <li>Assisted customers with various technological issues</li>
-          <li>Ensured student employees across campus were adequately monitoring campus technology</li>
+          <li>Collaborates with other technology analysts to develop tools used by the IT department</li>
+          <li>Supervises student employees to ensure computer labs and technology are available across campus</li>
+          <li>Assists students and customers by troubleshooting myriad technological issues</li>
         </ul>
       </Experience>
       <Experience
@@ -131,6 +132,21 @@ function FeaturedProjects() {
   return (
     <div className="featuredProjects">
       <FeaturedProject
+        title="Kadence"
+        tools={["Next.js", "HTML/CSS", "MongoDB", "Spotify", "Apple Music", "Fitbit"]}
+        githubLink={"https://github.com/AverySchaefer/Kadence_New"}
+        liveLink={""}
+      >
+        This is a group project for my Software Engineering Senior Project course, which I'm currently developing
+        alongside four other students. This app aims to improve the sometimes mediocre playlist recommendations of
+        Spotify and Apple Music. We offer four modes (mood mode, interval mode, fitness mode, and local artist mode)
+        where songs are automatically generated for the user based on both their preferences and the mode they selected.
+        For example, fitness mode will query your heart rate data from a Fitbit device and queue songs that match that
+        tempo on your preferred music platform. This has been a lot of fun to develop so far with all of the
+        technologies we've had to throw together to get it working. We also have an automatic CI/CD pipeline, which has
+        made development much easier.
+      </FeaturedProject>
+      <FeaturedProject
         title="Grade Calculator"
         tools={["Javascript", "HTML/CSS", "MongoDB", "Node", "Express"]}
         githubLink={"https://github.com/colstonstreit/GradeCalculator"}
@@ -139,10 +155,9 @@ function FeaturedProjects() {
         This is an active project that I've been wanting to develop for a long time. My motivation for it was that
         existing grade calculators often do not account for more complicated scoring like being able to drop the lowest
         homework or include extra credit without forcing the user to calculate these things themselves (which is not the
-        point). In addition to allowing users to calculate the scores they need, I also plan to offer a way for users to
-        easily visualize their final grade as a function of various combinations of scores. Currently the backend is not
-        hosted, but I've designed it so users can work offline as well. Please note additionally that this is very much
-        a work in progress (I am aware that the UI is, quite frankly, terrible).
+        point). This tool also allows users to visualize their final grade as a function of scores yet to be determined.
+        Currently the backend is not hosted, but I've designed it so users can work offline as well. Please note
+        additionally that this is very much a work in progress (i.e., the UI will be made better eventually).
       </FeaturedProject>
       <FeaturedProject
         title="Scholasticate"
@@ -171,7 +186,7 @@ function Projects() {
   return (
     <section className="projects">
       <h2>Featured Projects</h2>
-      <FeaturedProjects></FeaturedProjects>
+      <FeaturedProjects />
       {/* <h2>Other Noteworthy Projects</h2>
     <OtherProjects></OtherProjects> */}
     </section>
@@ -185,10 +200,10 @@ function Contact() {
 export default function Home() {
   return (
     <>
-      <About></About>
-      <RelevantExperience></RelevantExperience>
-      <Projects></Projects>
-      <Contact></Contact>
+      <About />
+      <RelevantExperience />
+      <Projects />
+      <Contact />
     </>
   );
 }
